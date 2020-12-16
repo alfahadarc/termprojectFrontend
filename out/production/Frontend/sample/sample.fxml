@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="460.0" prefWidth="700.0">
+         <children>
+            <AnchorPane prefHeight="462.0" prefWidth="325.0" style="-fx-background-color: #15A5FF;">
+               <children>
+                  <TextField fx:id="userName" layoutX="108.0" layoutY="148.0" />
+                  <PasswordField fx:id="password" layoutX="108.0" layoutY="202.0" />
+                  <Label layoutX="33.0" layoutY="206.0" text="Password" />
+                  <Label layoutX="31.0" layoutY="152.0" text="Username" />
+                  <Button fx:id="loginBtn" layoutX="140.0" layoutY="266.0" mnemonicParsing="false" onAction="#login" text="Login" />
+                  <Label layoutX="155.0" layoutY="81.0" text="Login">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <AnchorPane layoutX="325.0" prefHeight="462.0" prefWidth="374.0">
+               <children>
+                  <ImageView fitHeight="462.0" fitWidth="374.0" pickOnBounds="true">
+                     <image>
+                        <Image url="file:/D:/Term%20s1e2/Cpp_Java/Project/Frontend/static_resources/login.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="51.0" layoutY="328.0" text="Welcome to Car Showroom" textFill="#0f13dd">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <effect>
+                        <Reflection />
+                     </effect>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
